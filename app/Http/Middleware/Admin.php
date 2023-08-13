@@ -19,6 +19,6 @@ class Admin
         if ($user && $user->role === "ADM") {
             return $next($request);
         }
-        return redirect()->route('admin.board');
+        return redirect()->route('home');
     }
 }
